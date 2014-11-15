@@ -1,0 +1,15 @@
+PODS:
+  - PASOptionParser (0.0.1)
+
+DEPENDENCIES:
+  - PASOptionParser (from `http://github.com/paulsamuels/PASOptionParser.git`, tag `0.0.1`)
+
+EXTERNAL SOURCES:
+  PASOptionParser:
+    :git: http://github.com/paulsamuels/PASOptionParser.git
+    :tag: 0.0.1
+
+SPEC CHECKSUMS:
+  PASOptionParser: 59d7fe12a0839daf2b76f2207080414ec58c5d29
+
+COCOAPODS: 0.34.2

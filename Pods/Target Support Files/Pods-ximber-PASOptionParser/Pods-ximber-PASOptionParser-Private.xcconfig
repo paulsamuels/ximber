@@ -1,0 +1,5 @@
+#include "Pods-ximber-PASOptionParser.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/PASOptionParser" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/PASOptionParser"
+OTHER_LDFLAGS = ${PODS_XIMBER_PASOPTIONPARSER_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
