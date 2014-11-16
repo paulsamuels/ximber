@@ -13,7 +13,7 @@
 + (instancetype)connectionTransformationWithXPath:(NSString *)xPath keyTransformer:(NSString *(^)(NSString *))keyTransformer;
 {
   PASConnectionTransformation *instance = [[self alloc] init]; {
-    instance->_xPath          = [xPath copy];
+    instance->_xPath          = [xPath          copy];
     instance->_keyTransformer = [keyTransformer copy];
   }
   

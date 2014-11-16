@@ -35,7 +35,7 @@
   return self;
 }
 
-- (NSDictionary *)outletMappings;
+- (NSDictionary *)outletUserLabels;
 {
   NSMutableDictionary *mappings = [[NSMutableDictionary alloc] init];
   
@@ -80,8 +80,20 @@
       })];
     }
   }
+  
+  NSMutableDictionary *results = NSMutableDictionary.dictionary;
+  
+  [mappings enumerateKeysAndObjectsUsingBlock:^(id _, PASObjectConnections *objectConnections, BOOL *stop) {
+    NSString *userLabel = [[objectConnections.connections.allObjects sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)] componentsJoinedByString:@", "];
+    
+    if (objectConnections.connections.count > 1) {
+      userLabel = [NSString stringWithFormat:@"[%@]", userLabel];
+    }
+    
+    results[objectConnections.objectID] = userLabel;
+  }];
 
-  return [mappings copy];
+  return [results copy];
 }
 
 @end

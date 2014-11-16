@@ -16,7 +16,7 @@
  */
 @interface PASXibUpdater : NSObject
 
-- (instancetype)initWithXMLDocument:(NSXMLDocument *)document outletMappings:(NSDictionary *)outletMappings;
-- (BOOL)modify:(NSError **)error;
+- (instancetype)initWithXMLDocument:(NSXMLDocument *)document userLabels:(NSDictionary *)userLabels;
+- (BOOL)modifyWithForce:(BOOL)force error:(NSError **)error;
 
 @end

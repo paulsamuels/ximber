@@ -15,6 +15,13 @@
 		DAB9AADD1A17AF3600E301F3 /* PASObjectConnections.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB9AAD51A17AF3600E301F3 /* PASObjectConnections.m */; };
 		DAB9AADE1A17AF3600E301F3 /* PASXibParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB9AAD71A17AF3600E301F3 /* PASXibParser.m */; };
 		DAB9AADF1A17AF3600E301F3 /* PASXibUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB9AAD91A17AF3600E301F3 /* PASXibUpdater.m */; };
+		DAB9AAF51A190C4100E301F3 /* PASConstraintParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB9AAF41A190C4100E301F3 /* PASConstraintParser.m */; };
+		DAE98A471A1A7D0F00F8E5E7 /* PASConstraintFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE98A461A1A7D0F00F8E5E7 /* PASConstraintFormatter.m */; };
+		DAE98A4B1A1AA83000F8E5E7 /* NSArray+PASContains.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE98A4A1A1AA83000F8E5E7 /* NSArray+PASContains.m */; };
+		DAE98A4E1A1AAFE300F8E5E7 /* PASXibKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE98A4D1A1AAFE300F8E5E7 /* PASXibKeys.m */; };
+		DAE98A511A1AB2C700F8E5E7 /* PASConstraintKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE98A501A1AB2C700F8E5E7 /* PASConstraintKeys.m */; };
+		DAE98A551A1AB32900F8E5E7 /* NSXMLElement+PASConstraintAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE98A541A1AB32900F8E5E7 /* NSXMLElement+PASConstraintAdditions.m */; };
+		DAE98A581A1AB66000F8E5E7 /* NSXMLElement+PASXibElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE98A571A1AB66000F8E5E7 /* NSXMLElement+PASXibElementAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,7 +44,6 @@
 		DAB9AA741A17A4D800E301F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DAB9AACA1A17AF3600E301F3 /* NSMutableDictionary+PASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+PASAdditions.h"; sourceTree = "<group>"; };
 		DAB9AACB1A17AF3600E301F3 /* NSMutableDictionary+PASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+PASAdditions.m"; sourceTree = "<group>"; };
-		DAB9AACD1A17AF3600E301F3 /* PASXibKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASXibKeys.h; sourceTree = "<group>"; };
 		DAB9AACF1A17AF3600E301F3 /* PASCLI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASCLI.h; sourceTree = "<group>"; };
 		DAB9AAD01A17AF3600E301F3 /* PASCLI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASCLI.m; sourceTree = "<group>"; };
 		DAB9AAD21A17AF3600E301F3 /* PASConnectionTransformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASConnectionTransformation.h; sourceTree = "<group>"; };
@@ -48,6 +54,20 @@
 		DAB9AAD71A17AF3600E301F3 /* PASXibParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASXibParser.m; sourceTree = "<group>"; };
 		DAB9AAD81A17AF3600E301F3 /* PASXibUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASXibUpdater.h; sourceTree = "<group>"; };
 		DAB9AAD91A17AF3600E301F3 /* PASXibUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASXibUpdater.m; sourceTree = "<group>"; };
+		DAB9AAF31A190C4100E301F3 /* PASConstraintParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASConstraintParser.h; sourceTree = "<group>"; };
+		DAB9AAF41A190C4100E301F3 /* PASConstraintParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASConstraintParser.m; sourceTree = "<group>"; };
+		DAE98A451A1A7D0F00F8E5E7 /* PASConstraintFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASConstraintFormatter.h; sourceTree = "<group>"; };
+		DAE98A461A1A7D0F00F8E5E7 /* PASConstraintFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASConstraintFormatter.m; sourceTree = "<group>"; };
+		DAE98A491A1AA83000F8E5E7 /* NSArray+PASContains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PASContains.h"; sourceTree = "<group>"; };
+		DAE98A4A1A1AA83000F8E5E7 /* NSArray+PASContains.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PASContains.m"; sourceTree = "<group>"; };
+		DAE98A4C1A1AAFE300F8E5E7 /* PASXibKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PASXibKeys.h; path = ../../../../../../Documents/PASXibKeys.h; sourceTree = "<group>"; };
+		DAE98A4D1A1AAFE300F8E5E7 /* PASXibKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PASXibKeys.m; path = ../../../../../../Documents/PASXibKeys.m; sourceTree = "<group>"; };
+		DAE98A4F1A1AB2C700F8E5E7 /* PASConstraintKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PASConstraintKeys.h; path = ../../../../../../Documents/PASConstraintKeys.h; sourceTree = "<group>"; };
+		DAE98A501A1AB2C700F8E5E7 /* PASConstraintKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PASConstraintKeys.m; path = ../../../../../../Documents/PASConstraintKeys.m; sourceTree = "<group>"; };
+		DAE98A531A1AB32900F8E5E7 /* NSXMLElement+PASConstraintAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXMLElement+PASConstraintAdditions.h"; sourceTree = "<group>"; };
+		DAE98A541A1AB32900F8E5E7 /* NSXMLElement+PASConstraintAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSXMLElement+PASConstraintAdditions.m"; sourceTree = "<group>"; };
+		DAE98A561A1AB66000F8E5E7 /* NSXMLElement+PASXibElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXMLElement+PASXibElementAdditions.h"; sourceTree = "<group>"; };
+		DAE98A571A1AB66000F8E5E7 /* NSXMLElement+PASXibElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSXMLElement+PASXibElementAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +140,8 @@
 		DAB9AAC81A17AF3600E301F3 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				DAE98A521A1AB31600F8E5E7 /* NSXMLElement */,
+				DAE98A481A1AA80E00F8E5E7 /* NSArray */,
 				DAB9AAC91A17AF3600E301F3 /* NSMutableDictionary */,
 			);
 			path = Foundation;
@@ -137,7 +159,10 @@
 		DAB9AACC1A17AF3600E301F3 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				DAB9AACD1A17AF3600E301F3 /* PASXibKeys.h */,
+				DAE98A4C1A1AAFE300F8E5E7 /* PASXibKeys.h */,
+				DAE98A4D1A1AAFE300F8E5E7 /* PASXibKeys.m */,
+				DAE98A4F1A1AB2C700F8E5E7 /* PASConstraintKeys.h */,
+				DAE98A501A1AB2C700F8E5E7 /* PASConstraintKeys.m */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -162,8 +187,32 @@
 				DAB9AAD71A17AF3600E301F3 /* PASXibParser.m */,
 				DAB9AAD81A17AF3600E301F3 /* PASXibUpdater.h */,
 				DAB9AAD91A17AF3600E301F3 /* PASXibUpdater.m */,
+				DAB9AAF31A190C4100E301F3 /* PASConstraintParser.h */,
+				DAB9AAF41A190C4100E301F3 /* PASConstraintParser.m */,
+				DAE98A451A1A7D0F00F8E5E7 /* PASConstraintFormatter.h */,
+				DAE98A461A1A7D0F00F8E5E7 /* PASConstraintFormatter.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DAE98A481A1AA80E00F8E5E7 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				DAE98A491A1AA83000F8E5E7 /* NSArray+PASContains.h */,
+				DAE98A4A1A1AA83000F8E5E7 /* NSArray+PASContains.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		DAE98A521A1AB31600F8E5E7 /* NSXMLElement */ = {
+			isa = PBXGroup;
+			children = (
+				DAE98A531A1AB32900F8E5E7 /* NSXMLElement+PASConstraintAdditions.h */,
+				DAE98A541A1AB32900F8E5E7 /* NSXMLElement+PASConstraintAdditions.m */,
+				DAE98A561A1AB66000F8E5E7 /* NSXMLElement+PASXibElementAdditions.h */,
+				DAE98A571A1AB66000F8E5E7 /* NSXMLElement+PASXibElementAdditions.m */,
+			);
+			path = NSXMLElement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,13 +306,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE98A4E1A1AAFE300F8E5E7 /* PASXibKeys.m in Sources */,
 				DAB9AADD1A17AF3600E301F3 /* PASObjectConnections.m in Sources */,
 				DAB9AADE1A17AF3600E301F3 /* PASXibParser.m in Sources */,
+				DAE98A511A1AB2C700F8E5E7 /* PASConstraintKeys.m in Sources */,
 				DAB9AADF1A17AF3600E301F3 /* PASXibUpdater.m in Sources */,
 				DAB9AADA1A17AF3600E301F3 /* NSMutableDictionary+PASAdditions.m in Sources */,
 				DAB9AA751A17A4D800E301F3 /* main.m in Sources */,
 				DAB9AADB1A17AF3600E301F3 /* PASCLI.m in Sources */,
+				DAB9AAF51A190C4100E301F3 /* PASConstraintParser.m in Sources */,
 				DAB9AADC1A17AF3600E301F3 /* PASConnectionTransformation.m in Sources */,
+				DAE98A4B1A1AA83000F8E5E7 /* NSArray+PASContains.m in Sources */,
+				DAE98A581A1AB66000F8E5E7 /* NSXMLElement+PASXibElementAdditions.m in Sources */,
+				DAE98A471A1A7D0F00F8E5E7 /* PASConstraintFormatter.m in Sources */,
+				DAE98A551A1AB32900F8E5E7 /* NSXMLElement+PASConstraintAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

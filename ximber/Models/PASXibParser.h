@@ -15,6 +15,6 @@
 @interface PASXibParser : NSObject
 
 - (instancetype)initWithXMLDocument:(NSXMLDocument *)document;
-- (NSDictionary *)outletMappings;
+- (NSDictionary *)outletUserLabels;
 
 @end

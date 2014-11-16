@@ -14,6 +14,9 @@
 // Pods
 #import <PASOptionParser/PASOptionParser.h>
 
+
+#import "PASConstraintParser.h"
+
 @interface PASCLI ()
 
 @property (nonatomic, copy) NSString *outputDirectory;
@@ -49,11 +52,14 @@
                                              error:NULL];
     });
     
-    NSDictionary *mappings = [[[PASXibParser alloc] initWithXMLDocument:document] outletMappings];
+    NSDictionary *mappings = [[[PASXibParser alloc] initWithXMLDocument:document] outletUserLabels];
     
-    if (![[[PASXibUpdater alloc] initWithXMLDocument:document outletMappings:mappings] modify:error]) {
+    if (![[[PASXibUpdater alloc] initWithXMLDocument:document userLabels:mappings] modifyWithForce:NO error:error]) {
       return NO;
     }
+    
+    NSDictionary *constraintlabels = [[[PASConstraintParser alloc] initWithXMLDocument:document] userLabels];
+    [[[PASXibUpdater alloc] initWithXMLDocument:document userLabels:constraintlabels] modifyWithForce:YES error:error];
     
     if (self.outputDirectory) {
       documentURL = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/%@", self.outputDirectory, xibName.lastPathComponent]];
