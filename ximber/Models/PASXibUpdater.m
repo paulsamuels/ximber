@@ -17,37 +17,35 @@
 @interface PASXibUpdater ()
 
 @property (nonatomic, strong) NSXMLDocument *document;
-@property (nonatomic, copy)   NSDictionary  *outletMappings;
+@property (nonatomic, copy)   NSDictionary  *userLabels;
 
 @end
 
 @implementation PASXibUpdater
 
-- (instancetype)initWithXMLDocument:(NSXMLDocument *)document outletMappings:(NSDictionary *)outletMappings;
+- (instancetype)initWithXMLDocument:(NSXMLDocument *)document userLabels:(NSDictionary *)userLabels;
 {
   self = [super init];
   if (self) {
-    _document       = document;
-    _outletMappings = [outletMappings copy];
+    _document   = document;
+    _userLabels = [userLabels copy];
   }
   return self;
 }
 
-- (BOOL)modify:(NSError **)error;
+- (BOOL)modifyWithForce:(BOOL)force error:(NSError **)error;
 {
-  [self.outletMappings enumerateKeysAndObjectsUsingBlock:^(id _, PASObjectConnections *objectConnections, BOOL *stop) {
+  [self.userLabels enumerateKeysAndObjectsUsingBlock:^(NSString *nodeID, NSString *userLabel, BOOL *stop) {
     NSError *findNodeError = nil;
-    NSXMLElement *node = [self.document nodesForXPath:[NSString stringWithFormat:@"//*[@id='%@']", objectConnections.objectID]
+    NSXMLElement *node = [self.document nodesForXPath:[NSString stringWithFormat:@"//*[@id='%@']", nodeID]
                                                 error:&findNodeError].firstObject;
     
     if (!node) {
       NSLog(@"Could not find node: %@", findNodeError.localizedDescription);
     }
     
-    if (![node attributeForName:PASKeys.object.userLabel]) {
-      NSString *userLabel = [[objectConnections.connections.allObjects sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)] componentsJoinedByString:@", "];
-      [node addAttribute:[NSXMLNode attributeWithName:PASKeys.object.userLabel
-                                          stringValue:userLabel]];
+    if (force || ![node attributeForName:PASKeys.object.userLabel]) {
+      [node addAttribute:[NSXMLNode attributeWithName:PASKeys.object.userLabel stringValue:userLabel]];
     }
   }];
   return YES;

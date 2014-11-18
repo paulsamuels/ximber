@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		7FAEC562E0D387B1388B8E31 /* libPods-ximber.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA9240F4ADBF0EF21BB0E484 /* libPods-ximber.a */; };
+		DA6585F51A1AC62C006B6431 /* NSArray+PASContains.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6585D71A1AC62C006B6431 /* NSArray+PASContains.m */; };
+		DA6585F61A1AC62C006B6431 /* NSMutableDictionary+PASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6585DA1A1AC62C006B6431 /* NSMutableDictionary+PASAdditions.m */; };
+		DA6585F71A1AC62C006B6431 /* NSXMLElement+PASConstraintAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6585DD1A1AC62C006B6431 /* NSXMLElement+PASConstraintAdditions.m */; };
+		DA6585F81A1AC62C006B6431 /* NSXMLElement+PASXibElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6585DF1A1AC62C006B6431 /* NSXMLElement+PASXibElementAdditions.m */; };
+		DA6585F91A1AC62C006B6431 /* PASConstraintKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6585E21A1AC62C006B6431 /* PASConstraintKeys.m */; };
+		DA6585FA1A1AC62C006B6431 /* PASXibKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6585E41A1AC62C006B6431 /* PASXibKeys.m */; };
+		DA6585FB1A1AC62C006B6431 /* PASCLI.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6585E71A1AC62C006B6431 /* PASCLI.m */; };
+		DA6585FC1A1AC62C006B6431 /* PASConnectionTransformation.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6585EA1A1AC62C006B6431 /* PASConnectionTransformation.m */; };
+		DA6585FD1A1AC62C006B6431 /* PASConstraintFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6585EC1A1AC62C006B6431 /* PASConstraintFormatter.m */; };
+		DA6585FE1A1AC62C006B6431 /* PASConstraintParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6585EE1A1AC62C006B6431 /* PASConstraintParser.m */; };
+		DA6585FF1A1AC62C006B6431 /* PASObjectConnections.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6585F01A1AC62C006B6431 /* PASObjectConnections.m */; };
+		DA6586001A1AC62C006B6431 /* PASXibParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6585F21A1AC62C006B6431 /* PASXibParser.m */; };
+		DA6586011A1AC62C006B6431 /* PASXibUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6585F41A1AC62C006B6431 /* PASXibUpdater.m */; };
 		DAB9AA751A17A4D800E301F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB9AA741A17A4D800E301F3 /* main.m */; };
-		DAB9AADA1A17AF3600E301F3 /* NSMutableDictionary+PASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB9AACB1A17AF3600E301F3 /* NSMutableDictionary+PASAdditions.m */; };
-		DAB9AADB1A17AF3600E301F3 /* PASCLI.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB9AAD01A17AF3600E301F3 /* PASCLI.m */; };
-		DAB9AADC1A17AF3600E301F3 /* PASConnectionTransformation.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB9AAD31A17AF3600E301F3 /* PASConnectionTransformation.m */; };
-		DAB9AADD1A17AF3600E301F3 /* PASObjectConnections.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB9AAD51A17AF3600E301F3 /* PASObjectConnections.m */; };
-		DAB9AADE1A17AF3600E301F3 /* PASXibParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB9AAD71A17AF3600E301F3 /* PASXibParser.m */; };
-		DAB9AADF1A17AF3600E301F3 /* PASXibUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB9AAD91A17AF3600E301F3 /* PASXibUpdater.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,22 +39,35 @@
 /* Begin PBXFileReference section */
 		17FEEE1564678A27788EE463 /* Pods-ximber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ximber.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ximber/Pods-ximber.debug.xcconfig"; sourceTree = "<group>"; };
 		306205FCCB9ED57242FDC98F /* Pods-ximber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ximber.release.xcconfig"; path = "Pods/Target Support Files/Pods-ximber/Pods-ximber.release.xcconfig"; sourceTree = "<group>"; };
+		DA6585D61A1AC62C006B6431 /* NSArray+PASContains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PASContains.h"; sourceTree = "<group>"; };
+		DA6585D71A1AC62C006B6431 /* NSArray+PASContains.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PASContains.m"; sourceTree = "<group>"; };
+		DA6585D91A1AC62C006B6431 /* NSMutableDictionary+PASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+PASAdditions.h"; sourceTree = "<group>"; };
+		DA6585DA1A1AC62C006B6431 /* NSMutableDictionary+PASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+PASAdditions.m"; sourceTree = "<group>"; };
+		DA6585DC1A1AC62C006B6431 /* NSXMLElement+PASConstraintAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXMLElement+PASConstraintAdditions.h"; sourceTree = "<group>"; };
+		DA6585DD1A1AC62C006B6431 /* NSXMLElement+PASConstraintAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSXMLElement+PASConstraintAdditions.m"; sourceTree = "<group>"; };
+		DA6585DE1A1AC62C006B6431 /* NSXMLElement+PASXibElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSXMLElement+PASXibElementAdditions.h"; sourceTree = "<group>"; };
+		DA6585DF1A1AC62C006B6431 /* NSXMLElement+PASXibElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSXMLElement+PASXibElementAdditions.m"; sourceTree = "<group>"; };
+		DA6585E11A1AC62C006B6431 /* PASConstraintKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASConstraintKeys.h; sourceTree = "<group>"; };
+		DA6585E21A1AC62C006B6431 /* PASConstraintKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASConstraintKeys.m; sourceTree = "<group>"; };
+		DA6585E31A1AC62C006B6431 /* PASXibKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASXibKeys.h; sourceTree = "<group>"; };
+		DA6585E41A1AC62C006B6431 /* PASXibKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASXibKeys.m; sourceTree = "<group>"; };
+		DA6585E61A1AC62C006B6431 /* PASCLI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASCLI.h; sourceTree = "<group>"; };
+		DA6585E71A1AC62C006B6431 /* PASCLI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASCLI.m; sourceTree = "<group>"; };
+		DA6585E91A1AC62C006B6431 /* PASConnectionTransformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASConnectionTransformation.h; sourceTree = "<group>"; };
+		DA6585EA1A1AC62C006B6431 /* PASConnectionTransformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASConnectionTransformation.m; sourceTree = "<group>"; };
+		DA6585EB1A1AC62C006B6431 /* PASConstraintFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASConstraintFormatter.h; sourceTree = "<group>"; };
+		DA6585EC1A1AC62C006B6431 /* PASConstraintFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASConstraintFormatter.m; sourceTree = "<group>"; };
+		DA6585ED1A1AC62C006B6431 /* PASConstraintParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASConstraintParser.h; sourceTree = "<group>"; };
+		DA6585EE1A1AC62C006B6431 /* PASConstraintParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASConstraintParser.m; sourceTree = "<group>"; };
+		DA6585EF1A1AC62C006B6431 /* PASObjectConnections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASObjectConnections.h; sourceTree = "<group>"; };
+		DA6585F01A1AC62C006B6431 /* PASObjectConnections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASObjectConnections.m; sourceTree = "<group>"; };
+		DA6585F11A1AC62C006B6431 /* PASXibParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASXibParser.h; sourceTree = "<group>"; };
+		DA6585F21A1AC62C006B6431 /* PASXibParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASXibParser.m; sourceTree = "<group>"; };
+		DA6585F31A1AC62C006B6431 /* PASXibUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASXibUpdater.h; sourceTree = "<group>"; };
+		DA6585F41A1AC62C006B6431 /* PASXibUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASXibUpdater.m; sourceTree = "<group>"; };
 		DA9240F4ADBF0EF21BB0E484 /* libPods-ximber.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ximber.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB9AA711A17A4D800E301F3 /* ximber */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ximber; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB9AA741A17A4D800E301F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DAB9AACA1A17AF3600E301F3 /* NSMutableDictionary+PASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+PASAdditions.h"; sourceTree = "<group>"; };
-		DAB9AACB1A17AF3600E301F3 /* NSMutableDictionary+PASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+PASAdditions.m"; sourceTree = "<group>"; };
-		DAB9AACD1A17AF3600E301F3 /* PASXibKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASXibKeys.h; sourceTree = "<group>"; };
-		DAB9AACF1A17AF3600E301F3 /* PASCLI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASCLI.h; sourceTree = "<group>"; };
-		DAB9AAD01A17AF3600E301F3 /* PASCLI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASCLI.m; sourceTree = "<group>"; };
-		DAB9AAD21A17AF3600E301F3 /* PASConnectionTransformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASConnectionTransformation.h; sourceTree = "<group>"; };
-		DAB9AAD31A17AF3600E301F3 /* PASConnectionTransformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASConnectionTransformation.m; sourceTree = "<group>"; };
-		DAB9AAD41A17AF3600E301F3 /* PASObjectConnections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASObjectConnections.h; sourceTree = "<group>"; };
-		DAB9AAD51A17AF3600E301F3 /* PASObjectConnections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASObjectConnections.m; sourceTree = "<group>"; };
-		DAB9AAD61A17AF3600E301F3 /* PASXibParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASXibParser.h; sourceTree = "<group>"; };
-		DAB9AAD71A17AF3600E301F3 /* PASXibParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASXibParser.m; sourceTree = "<group>"; };
-		DAB9AAD81A17AF3600E301F3 /* PASXibUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASXibUpdater.h; sourceTree = "<group>"; };
-		DAB9AAD91A17AF3600E301F3 /* PASXibUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASXibUpdater.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +99,92 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DA6585D31A1AC62C006B6431 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DA6585D41A1AC62C006B6431 /* Foundation */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		DA6585D41A1AC62C006B6431 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				DA6585D51A1AC62C006B6431 /* NSArray */,
+				DA6585D81A1AC62C006B6431 /* NSMutableDictionary */,
+				DA6585DB1A1AC62C006B6431 /* NSXMLElement */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		DA6585D51A1AC62C006B6431 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				DA6585D61A1AC62C006B6431 /* NSArray+PASContains.h */,
+				DA6585D71A1AC62C006B6431 /* NSArray+PASContains.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		DA6585D81A1AC62C006B6431 /* NSMutableDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				DA6585D91A1AC62C006B6431 /* NSMutableDictionary+PASAdditions.h */,
+				DA6585DA1A1AC62C006B6431 /* NSMutableDictionary+PASAdditions.m */,
+			);
+			path = NSMutableDictionary;
+			sourceTree = "<group>";
+		};
+		DA6585DB1A1AC62C006B6431 /* NSXMLElement */ = {
+			isa = PBXGroup;
+			children = (
+				DA6585DC1A1AC62C006B6431 /* NSXMLElement+PASConstraintAdditions.h */,
+				DA6585DD1A1AC62C006B6431 /* NSXMLElement+PASConstraintAdditions.m */,
+				DA6585DE1A1AC62C006B6431 /* NSXMLElement+PASXibElementAdditions.h */,
+				DA6585DF1A1AC62C006B6431 /* NSXMLElement+PASXibElementAdditions.m */,
+			);
+			path = NSXMLElement;
+			sourceTree = "<group>";
+		};
+		DA6585E01A1AC62C006B6431 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DA6585E11A1AC62C006B6431 /* PASConstraintKeys.h */,
+				DA6585E21A1AC62C006B6431 /* PASConstraintKeys.m */,
+				DA6585E31A1AC62C006B6431 /* PASXibKeys.h */,
+				DA6585E41A1AC62C006B6431 /* PASXibKeys.m */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DA6585E51A1AC62C006B6431 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA6585E61A1AC62C006B6431 /* PASCLI.h */,
+				DA6585E71A1AC62C006B6431 /* PASCLI.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DA6585E81A1AC62C006B6431 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA6585E91A1AC62C006B6431 /* PASConnectionTransformation.h */,
+				DA6585EA1A1AC62C006B6431 /* PASConnectionTransformation.m */,
+				DA6585EB1A1AC62C006B6431 /* PASConstraintFormatter.h */,
+				DA6585EC1A1AC62C006B6431 /* PASConstraintFormatter.m */,
+				DA6585ED1A1AC62C006B6431 /* PASConstraintParser.h */,
+				DA6585EE1A1AC62C006B6431 /* PASConstraintParser.m */,
+				DA6585EF1A1AC62C006B6431 /* PASObjectConnections.h */,
+				DA6585F01A1AC62C006B6431 /* PASObjectConnections.m */,
+				DA6585F11A1AC62C006B6431 /* PASXibParser.h */,
+				DA6585F21A1AC62C006B6431 /* PASXibParser.m */,
+				DA6585F31A1AC62C006B6431 /* PASXibUpdater.h */,
+				DA6585F41A1AC62C006B6431 /* PASXibUpdater.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DAB9AA681A17A4D800E301F3 = {
 			isa = PBXGroup;
 			children = (
@@ -100,70 +206,13 @@
 		DAB9AA731A17A4D800E301F3 /* ximber */ = {
 			isa = PBXGroup;
 			children = (
-				DAB9AAC71A17AF3600E301F3 /* Categories */,
-				DAB9AACC1A17AF3600E301F3 /* Constants */,
-				DAB9AACE1A17AF3600E301F3 /* Controllers */,
-				DAB9AAD11A17AF3600E301F3 /* Models */,
+				DA6585D31A1AC62C006B6431 /* Categories */,
+				DA6585E01A1AC62C006B6431 /* Constants */,
+				DA6585E51A1AC62C006B6431 /* Controllers */,
+				DA6585E81A1AC62C006B6431 /* Models */,
 				DAB9AA741A17A4D800E301F3 /* main.m */,
 			);
 			path = ximber;
-			sourceTree = "<group>";
-		};
-		DAB9AAC71A17AF3600E301F3 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				DAB9AAC81A17AF3600E301F3 /* Foundation */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		DAB9AAC81A17AF3600E301F3 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				DAB9AAC91A17AF3600E301F3 /* NSMutableDictionary */,
-			);
-			path = Foundation;
-			sourceTree = "<group>";
-		};
-		DAB9AAC91A17AF3600E301F3 /* NSMutableDictionary */ = {
-			isa = PBXGroup;
-			children = (
-				DAB9AACA1A17AF3600E301F3 /* NSMutableDictionary+PASAdditions.h */,
-				DAB9AACB1A17AF3600E301F3 /* NSMutableDictionary+PASAdditions.m */,
-			);
-			path = NSMutableDictionary;
-			sourceTree = "<group>";
-		};
-		DAB9AACC1A17AF3600E301F3 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				DAB9AACD1A17AF3600E301F3 /* PASXibKeys.h */,
-			);
-			path = Constants;
-			sourceTree = "<group>";
-		};
-		DAB9AACE1A17AF3600E301F3 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				DAB9AACF1A17AF3600E301F3 /* PASCLI.h */,
-				DAB9AAD01A17AF3600E301F3 /* PASCLI.m */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		DAB9AAD11A17AF3600E301F3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				DAB9AAD21A17AF3600E301F3 /* PASConnectionTransformation.h */,
-				DAB9AAD31A17AF3600E301F3 /* PASConnectionTransformation.m */,
-				DAB9AAD41A17AF3600E301F3 /* PASObjectConnections.h */,
-				DAB9AAD51A17AF3600E301F3 /* PASObjectConnections.m */,
-				DAB9AAD61A17AF3600E301F3 /* PASXibParser.h */,
-				DAB9AAD71A17AF3600E301F3 /* PASXibParser.m */,
-				DAB9AAD81A17AF3600E301F3 /* PASXibUpdater.h */,
-				DAB9AAD91A17AF3600E301F3 /* PASXibUpdater.m */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,13 +306,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAB9AADD1A17AF3600E301F3 /* PASObjectConnections.m in Sources */,
-				DAB9AADE1A17AF3600E301F3 /* PASXibParser.m in Sources */,
-				DAB9AADF1A17AF3600E301F3 /* PASXibUpdater.m in Sources */,
-				DAB9AADA1A17AF3600E301F3 /* NSMutableDictionary+PASAdditions.m in Sources */,
+				DA6586001A1AC62C006B6431 /* PASXibParser.m in Sources */,
+				DA6585F51A1AC62C006B6431 /* NSArray+PASContains.m in Sources */,
+				DA6586011A1AC62C006B6431 /* PASXibUpdater.m in Sources */,
+				DA6585F81A1AC62C006B6431 /* NSXMLElement+PASXibElementAdditions.m in Sources */,
+				DA6585FE1A1AC62C006B6431 /* PASConstraintParser.m in Sources */,
+				DA6585FA1A1AC62C006B6431 /* PASXibKeys.m in Sources */,
 				DAB9AA751A17A4D800E301F3 /* main.m in Sources */,
-				DAB9AADB1A17AF3600E301F3 /* PASCLI.m in Sources */,
-				DAB9AADC1A17AF3600E301F3 /* PASConnectionTransformation.m in Sources */,
+				DA6585FD1A1AC62C006B6431 /* PASConstraintFormatter.m in Sources */,
+				DA6585F91A1AC62C006B6431 /* PASConstraintKeys.m in Sources */,
+				DA6585F61A1AC62C006B6431 /* NSMutableDictionary+PASAdditions.m in Sources */,
+				DA6585FC1A1AC62C006B6431 /* PASConnectionTransformation.m in Sources */,
+				DA6585F71A1AC62C006B6431 /* NSXMLElement+PASConstraintAdditions.m in Sources */,
+				DA6585FB1A1AC62C006B6431 /* PASCLI.m in Sources */,
+				DA6585FF1A1AC62C006B6431 /* PASObjectConnections.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

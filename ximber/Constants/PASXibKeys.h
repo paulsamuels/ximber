@@ -8,7 +8,7 @@
 
 @import Foundation;
 
-static const struct PASKeys {
+extern const struct PASKeys {
   
   struct {
     __unsafe_unretained NSString *userLabel;
@@ -24,20 +24,4 @@ static const struct PASKeys {
     __unsafe_unretained NSString *outlets;
   } xPath;
   
-} PASKeys = {
-  
-  .object = {
-    .userLabel = @"userLabel",
-  },
-  
-  .outlet = {
-    .destination = @"destination",
-    .property    = @"property",
-  },
-  
-  .xPath = {
-    .outletCollections = @"//connections/outletCollection",
-    .outlets           = @"//connections/outlet",
-  }
-  
-};
+} PASKeys;
