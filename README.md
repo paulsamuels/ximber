@@ -7,15 +7,37 @@ A tool for naming outlets in xibs.
 
 I have a problem with interface builder and it looks like this:
 
+![Image Alt](https://raw.github.com/paulsamuels/ximber/master/READMEAssets/bad_constraints_naming.png)
+
+You spend ages setting up the constraints just the way you want them. However when you come back a day, week, month... later it's pretty much impossible to work with the constraints made in interface builder. It's often much easier to just delete all the things and start again. After getting really fed up of this process I decided to create a quick tool to give the constraints better names, which changes the above image into this:
+
+![Image Alt](https://raw.github.com/paulsamuels/ximber/master/READMEAssets/good_constraints_naming.png)
+
+This is roughly based on the visual formatting language that we all know and love and then some minor amends to make the labels smaller.
+
+---
+
+On a similar note it makes sense to do the exact same thing with outlet connection names where possible. You start of with something like this:
+
 ![Image Alt](https://raw.github.com/paulsamuels/ximber/master/READMEAssets/poor_naming.png)
 
-All of those views have the same name. Being a kind developer I'll manually update these labels so they reflect what views they represent - this will save others and my self pain later down the line. This seems like redundant work when most of these views are connected to nicely named properties in my classes... this sounds like something I can automate.
-
-```
-../path/to/ximber path/to/xibs/*.{xib,storyboard}
-```
+then after running `ximber` you end up with:
 
 ![Image Alt](https://raw.github.com/paulsamuels/ximber/master/READMEAssets/nice_naming.png)
+
+In this case the tool has added a userLabel that utilises the names of the IBOutlet's in your source code.
+
+##Installation
+
+There are no fancy installation steps currently. Just build this project and put the build product `ximber` wherever you want to use it.
+
+##Usage
+
+```
+path/to/ximber ./**/*.xib
+```
+
+Just call `ximber` and throw in a glob that captures all your xib/storyboard files
 
 ##Warning
 
