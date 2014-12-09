@@ -81,7 +81,7 @@
     }
   }
 
-  if ([self.attributes pas_containsObjects:@[ PASConstraintKeys.leading, PASConstraintKeys.leadingMargin ]]) {
+  if ([self.attributes pas_containsObjects:@[ PASConstraintKeys.leading, PASConstraintKeys.leadingMargin ]] || [self.attributes pas_containsObjects:@[ PASConstraintKeys.trailing, PASConstraintKeys.trailingMargin ]]) {
     return [self alignmentDescription];
   }
   

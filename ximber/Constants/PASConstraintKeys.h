@@ -18,5 +18,6 @@ extern const struct PASConstraintKeys {
   __unsafe_unretained NSString *leadingMargin;
   __unsafe_unretained NSString *top;
   __unsafe_unretained NSString *trailing;
+  __unsafe_unretained NSString *trailingMargin;
   __unsafe_unretained NSString *width;
 } PASConstraintKeys;
