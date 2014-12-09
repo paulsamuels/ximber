@@ -80,6 +80,10 @@
       
     }
   }
+
+  if ([self.attributes pas_containsObjects:@[ PASConstraintKeys.leading, PASConstraintKeys.leadingMargin ]]) {
+    return [self alignmentDescription];
+  }
   
   if ([self.attributes pas_containsObjects:@[ PASConstraintKeys.bottom, PASConstraintKeys.top ]] || [self.attributes pas_containsObjects:@[ PASConstraintKeys.leading, PASConstraintKeys.trailing ]]) {
     return [self spaceDescription];

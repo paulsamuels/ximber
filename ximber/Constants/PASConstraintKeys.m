@@ -9,13 +9,14 @@
 #import "PASConstraintKeys.h"
 
 const struct PASConstraintKeys PASConstraintKeys = {
-  .baseline = @"baseline",
-  .bottom   = @"bottom",
-  .centerX  = @"centerX",
-  .centerY  = @"centerY",
-  .height   = @"height",
-  .leading  = @"leading",
-  .top      = @"top",
-  .trailing = @"trailing",
-  .width    = @"width",
+  .baseline      = @"baseline",
+  .bottom        = @"bottom",
+  .centerX       = @"centerX",
+  .centerY       = @"centerY",
+  .height        = @"height",
+  .leading       = @"leading",
+  .leadingMargin = @"leadingMargin",
+  .top           = @"top",
+  .trailing      = @"trailing",
+  .width         = @"width",
 };
