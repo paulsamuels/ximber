@@ -81,7 +81,10 @@
     }
   }
 
-  if ([self.attributes pas_containsObjects:@[ PASConstraintKeys.leading, PASConstraintKeys.leadingMargin ]] || [self.attributes pas_containsObjects:@[ PASConstraintKeys.trailing, PASConstraintKeys.trailingMargin ]]) {
+  if ([self.attributes pas_containsObjects:@[ PASConstraintKeys.leading, PASConstraintKeys.leadingMargin ]]   ||
+      [self.attributes pas_containsObjects:@[ PASConstraintKeys.trailing, PASConstraintKeys.trailingMargin ]] ||
+      [self.attributes pas_containsObjects:@[ PASConstraintKeys.top, PASConstraintKeys.topMargin ]]           ||
+      [self.attributes pas_containsObjects:@[ PASConstraintKeys.bottom, PASConstraintKeys.bottomMargin ]]) {
     return [self alignmentDescription];
   }
   
