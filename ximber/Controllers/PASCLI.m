@@ -14,7 +14,6 @@
 // Pods
 #import <PASOptionParser/PASOptionParser.h>
 
-
 #import "PASConstraintParser.h"
 
 @interface PASCLI ()
@@ -65,7 +64,7 @@
       documentURL = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@/%@", self.outputDirectory, xibName.lastPathComponent]];
     }
     
-    [[document XMLDataWithOptions:NSXMLNodePrettyPrint] writeToURL:documentURL atomically:YES];
+    [[document XMLDataWithOptions:NSXMLNodePrettyPrint | NSXMLNodeCompactEmptyElement] writeToURL:documentURL atomically:YES];
   }
   
   return YES;
