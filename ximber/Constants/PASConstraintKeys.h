@@ -11,11 +11,15 @@
 extern const struct PASConstraintKeys {
   __unsafe_unretained NSString *baseline;
   __unsafe_unretained NSString *bottom;
+  __unsafe_unretained NSString *bottomMargin;
   __unsafe_unretained NSString *centerX;
   __unsafe_unretained NSString *centerY;
   __unsafe_unretained NSString *height;
   __unsafe_unretained NSString *leading;
+  __unsafe_unretained NSString *leadingMargin;
   __unsafe_unretained NSString *top;
+  __unsafe_unretained NSString *topMargin;
   __unsafe_unretained NSString *trailing;
+  __unsafe_unretained NSString *trailingMargin;
   __unsafe_unretained NSString *width;
 } PASConstraintKeys;
